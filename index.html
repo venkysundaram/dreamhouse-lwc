@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <!-- (Part 2: CSS, Question 0) Font import here. If you don't know what this is yet, don't worry, we cover this in the Part 2 of the homework.-->
+    <title>PRIYA VENKATESAN</title>
+</head>
+<body>
+        <!-- Part 1: Question 0. Add an image of yourself here. -->
+        <img src="https://media.licdn.com/dms/image/D5603AQGJYMCECyW_bw/profile-displayphoto-shrink_800_800/0/1686624601841?e=2147483647&v=beta&t=xB0pUuzJx0wSXrTAI5u-0J_J0ThaaBTijSOOLNZK6NM"/>
+        <h1>PRIYA VENKATESAN</h1>
+        <!-- Question 1. Add a unique id to each div that belongs to the class "section-wrapper".-->
+        <div class="section-wrapper">
+            <h2>Education</h2>
+            <div class="education-list-item">
+            <div id="education">
+            <p>Walton High School (2019-2023); University of California, Berkeley (2023-2027)</p>
+            <ul>
+                <li>Intended major: Cognitive Science</li>
+                <li>Freshman year @ Cal: Psych 110, Cog Sci 1B, Math 1A, Comp Sci 198</li>
+            </ul>
+        </div>
+        </div>
+            <!-- Question 2. Fill this in with details about your degree, major(s), and coursework. Use at least 1 header tag (h3, b, or em). -->
+        </div>
+        <div class="section-wrapper">
+            <h2>Experience</h2>
+            <!-- Question 3a. Create 2 to 3 divs with the same class (experience-list-item), and fill them in with your work experiences. -->
+            <div class="experience-list-item">
+                <h3>Berkeley Innovation</h3>
+                <p>Berkeley Innovation is a design consulting club. We assist clients with UX design & UX research. </p>
+                <ul>
+                    <!-- Question 3b. Fill this in with some bulletpoints on things you did. -->
+                    <li>Working with 1Page currently to design a UX navigation workspace</li>
+                    <li>Working on learning how to prototype and use Figma when creating digital workspaces</li>
+                </ul>
+            </div>
+            <!-- Question 3c. Create a div that contains/wraps around all the experience-list-item divs named "experience-wrapper"! You'll need this later. -->
+        </div>
+        <div class="section-wrapper">
+            <h2>Projects</h2>
+            <!-- Question 4a. Create a few project-list-items divs. Fill these in with your favorite projects! -->
+            <div class="section-wrapper">
+                <!-- Question 3a. Create 2 to 3 divs with the same class (experience-list-item), and fill them in with your work experiences. -->
+                <div class="projects-list-item">
+                    <h3>Intro to Figma</h3>
+        
+                        <!-- Question 3b. Fill this in with some bulletpoints on things you did. -->
+                        <p>Created a sample interactive website and a high fidelity prototype using Figma</p>
+            
+                </div>
+                <!-- Question 3c. Create a div that contains/wraps around all the experience-list-item divs named "experience-wrapper"! You'll need this later. -->
+            </div>
+        </div>
+            <!-- Question 4b. Create a div that contains/wraps around all the projects-list-item divs named "project-wrapper". You'll need this later! -->
+        <div class="section-wrapper">
+            <!-- Question 5. Add a link to your favorite social media account to the text "here". -->
+            <h2>Socials</h2>
+            <div class="social-list-item">
+            <!-- Question 5. Add a link to your favorite social media account to the text "here". -->
+            <h3>Instagram <a href="https://www.instagram.com/priyav5725/">Click here</a></h3>
+        </div>
+        <button onclick="initEmbeddedMessaging()">Click me!</button>
+        </div>
+        <script type='text/javascript'>
+            function initEmbeddedMessaging() {
+                try {
+                    embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
+        
+                    embeddedservice_bootstrap.init(
+                        '00D590000008ixB',
+                        'Messaging_Web',
+                        'https://gbs-s2p--gbsmessage.sandbox.my.site.com/ESWMessagingWeb1693570853073',
+                        {
+                            scrt2URL: 'https://gbs-s2p--gbsmessage.sandbox.my.salesforce-scrt.com'
+                        }
+                    );
+                } catch (err) {
+                    console.error('Error loading Embedded Messaging: ', err);
+                }
+            };
+        </script>
+        <script type='text/javascript' src='https://gbs-s2p--gbsmessage.sandbox.my.site.com/ESWMessagingWeb1693570853073/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+        
+</body>
+</html>
